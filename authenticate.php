@@ -89,7 +89,7 @@ else
 		Invalid username or password!<br />
 		<a href='login.php'>&gt; Back</a>");
     }
-    if ($mem['userid'] == 1 && file_exists('./installer.php'))
+    if ($mem['userid'] == 1 && file_exists('./installer.php') && !file_exists('./installer.lock'))
     {
         die(
                 "<h3>Test MCCodes Error</h3>
